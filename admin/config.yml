@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: TPG2/wild-fluffy
+  name: git-gateway
   branch: main
 
 media_folder: "images/uploads"
