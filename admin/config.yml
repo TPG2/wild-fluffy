@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: TPG2/wild-fluffy
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "artists"
+    label: "Artists"
+    folder: "content/artists"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Artist Name", name: "title", widget: "string" }
+      - { label: "Genre", name: "genre", widget: "string" }
+      - { label: "Bio", name: "body", widget: "markdown" }
+
+  - name: "releases"
+    label: "Releases"
+    folder: "content/releases"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Release Title", name: "title", widget: "string" }
+      - { label: "Artist", name: "artist", widget: "string" }
+      - { label: "Year", name: "year", widget: "string" }
+      - { label: "Description", name: "body", widget: "markdown" }
